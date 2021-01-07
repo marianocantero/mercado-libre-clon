@@ -1,0 +1,152 @@
+:root {
+    --colorPrimario : #fff159;
+    --colorSecundario: #3483fa;
+    --fuentePrimaria: 'Roboto', sans-serif;
+    --fuenteSecundaria: 'PT Sans', sans-serif;
+    --gris: #e1e1e1;
+    --gris2: #f6f4f4;
+    --blanco:#FFFFFF;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    
+  }
+
+  body {
+    font-family: var(--fuenteSecundaria);
+    font-size: 2rem;
+  }
+
+  /**Globales**/
+  .contenedor {
+      max-width: 120rem;
+      margin: 0 auto;
+  }
+
+  ul {
+      list-style: none;
+  }
+
+  a{
+      text-decoration: none;
+  }
+
+  img {
+      max-width: 100%;
+  }
+
+  .no-margin {
+      margin: 0;
+  }
+
+  .no-padding {
+      padding: 0;
+  }
+
+  .centrar-texto {
+      text-align: center;
+  }
+
+  .boton-primario {
+      display: block;
+      background-color: var(--colorSecundario);
+      border-color: transparent;
+      color: var(--blanco);
+      padding: 1rem 3rem;
+      border-radius: 1rem;
+      font-size: 1.7rem;
+      text-align: center;
+      font-family: var(--fuentePrimaria);
+      font-weight: bold;
+  }
+
+  @media(min-width:768px){
+    .boton-primario {
+       display: inline-block;
+    }
+  }
+
+
+  /**HEADER**/
+  .header {
+      background-color: var(--colorPrimario);
+      padding: 2rem 4rem;
+      font-family: var(--fuentePrimaria);
+  }
+
+  .barra-superior {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-top: 3rem;
+  }
+
+  .logo {
+      margin-bottom: 1rem;
+  }
+@media(min-width: 768px ){
+    .barra-superior {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.campo {
+    background-color: var(--colorPrimario);
+}
+
+.boton-busqueda {
+    background-color:transparent;
+    border: none;
+}
+
+.barra-inferior {
+    text-align: center;
+}
+@media(min-width:768px) {
+    .barra-inferior {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.cuenta a {
+    margin-right: 2rem;
+}
+
+.cuenta a:last-of-type{
+    margin-right: 0;
+}
+
+.principal {
+    background-color: var(--gris2);
+    padding: 5rem 0;
+}
+
+.dos-columnas {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.producto {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 4rem;
+    border-bottom: 2px solid var(--gris);
+    background-color: var(--blanco);
+}
+
+.producto-imagen {
+    height: 20rem;
+}
+
+.footer {
+    padding: 3rem 0;
+    background-color: var(--colorPrimario);
+    font-family: var(--fuentePrimaria);
+}
